@@ -12,9 +12,9 @@ The goal is not to have AI write the portfolio, but to use it as a documentation
 
 AI drafts are not accepted at face value. Every document in this portfolio goes through the following checks before publishing:
 
-**Sensitive information review** — AI-generated drafts are checked for accidental disclosure of hostnames, subnet addresses, service identifiers, API configuration details, and brand names for security tools. Anything that could reveal specifics about the network environment or security tooling is removed or generalised.
-
 **Accuracy review** — Technical claims, model names, version numbers, tool capabilities and configuration details are verified against actual results.
+
+**Sensitive information review** — AI-generated drafts are checked for accidental disclosure of hostnames, subnet addresses, service identifiers, API configuration details, and brand names for security tools. Anything that could reveal specifics about the network environment or security tooling is removed or generalised.
 
 **Scope and framing review** — AI assistance has a tendency to overstate or embellish the scope of work done. Drafts are reviewed to ensure they accurately reflect what was actually completed, not an inflated version of it.
 
@@ -43,15 +43,15 @@ The following are real examples of issues identified and corrected during the do
 
 ---
 
-## Observations on AI Limitations
+## Why This Process Matters
 
-Working with AI tools — both cloud-based assistants and local models tested in the home lab — has provided direct exposure to failure modes relevant to security contexts:
+The review process above exists because AI tools have failure modes that are particularly dangerous in security contexts. Working with both cloud-based assistants and local models tested in the home lab has provided direct exposure to these:
 
-**Hallucination** — Models sometimes produce confident but incorrect information rather than acknowledging uncertainty. Smaller local models are particularly prone to this.
+**Hallucination** — Models sometimes produce confident but incorrect information rather than acknowledging uncertainty. Smaller local models are particularly prone to this. The technical inaccuracies caught in this portfolio — incorrect model parameters, fabricated configuration steps, inaccurate vendor capabilities — are all examples of this in practice.
 
-**Sycophancy** — Models can show a tendency to agree with the user regardless of accuracy, reversing correct positions when challenged. This is a known training artefact that varies by model size and capability.
+**Sycophancy** — Models can show a tendency to agree with the user regardless of accuracy, reversing correct positions when challenged. This makes the framing and scope issues harder to catch, because the AI will readily agree that work was more extensive than it actually was and often err on the side of embellishment.
 
-**Security implication** — Both behaviours are particularly dangerous in security contexts. Acting on confidently incorrect technical information could have real consequences, which reinforces the need to treat AI outputs as a starting point for critical evaluation rather than a source of truth.
+Acting on confidently incorrect technical information in a security context could have real consequences. The review process documented here is a direct response to that risk.
 
 ---
 
