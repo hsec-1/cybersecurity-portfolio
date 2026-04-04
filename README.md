@@ -1,13 +1,14 @@
+
 # Cybersecurity Portfolio
 
-Self-directed learning portfolio documenting hands-on projects undertaken while studying for an entry level cybersecurity role.
+Self-directed learning portfolio documenting hands-on projects undertaken while studying for an entry level cybersecurity role. All documentation was critically reviewed for technical accuracy, sensitive information disclosure and honest representation of work completed — the process is documented [here](AI%20Security%20Research/ai-assisted-documentation-apr26.md).
 
 ---
 
 ## Projects
 
 | Topic | Skills Demonstrated |
-|------------|---------------------|
+| --- | --- |
 | [Network Security](Network%20Security/README.md) | Network segmentation, VLAN configuration, IoT isolation, NAT analysis, log auditing |
 | [Linux & Virtualisation](Linux%20%26%20Virtualisation/README.md) | VM deployment, Linux administration, network troubleshooting, SSH |
 | [DNS Security](DNS%20Security/README.md) | Encrypted DNS (DoT), DNS filtering, privacy configuration |
