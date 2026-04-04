@@ -6,7 +6,7 @@ Self-directed learning portfolio documenting hands-on projects undertaken while 
 
 ## Projects
 
-| Topic Area | Skills Demonstrated |
+| Topic | Skills Demonstrated |
 |------------|---------------------|
 | [Network Security](Network%20Security/README.md) | Network segmentation, VLAN configuration, IoT isolation, NAT analysis, log auditing |
 | [Linux & Virtualisation](Linux%20%26%20Virtualisation/README.md) | VM deployment, Linux administration, network troubleshooting, SSH |
