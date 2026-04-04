@@ -4,7 +4,7 @@ Hands-on projects covering virtual machine deployment, Linux administration and 
 
 | Document | Description | Date |
 |----------|-------------|------|
-| [Ubuntu VM Setup on Apple Silicon](april-2026-ubuntu-utm-setup.md) | Deployed Ubuntu 25.10 in UTM, troubleshot VPN/NAT interference | April 2026 |
+| [Ubuntu VM Setup on Apple Silicon](ubuntu-utm-setup-apr26.md) | Deployed Ubuntu 25.10 in UTM, troubleshot VPN/NAT interference | April 2026 |
 
 ---
 
