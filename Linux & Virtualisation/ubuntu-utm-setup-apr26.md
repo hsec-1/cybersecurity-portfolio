@@ -11,7 +11,7 @@ Deployed Ubuntu 25.10 Desktop in a UTM virtual machine on an M5 MacBook, trouble
 - **Host:** Apple M5 MacBook
 - **Hypervisor:** UTM (QEMU-based)
 - **Guest OS:** Ubuntu 25.10 (ARM64)
-- **Network mode:** Shared Network (NAT) — UTM internal subnet 192.168.64.x
+- **Network mode:** Shared Network (NAT) — UTM internal subnet
 
 ---
 
@@ -30,11 +30,11 @@ Deployed Ubuntu 25.10 Desktop in a UTM virtual machine on an M5 MacBook, trouble
 
 During installation, the VM was unable to reach the Ubuntu mirror servers or the internet despite appearing correctly configured. The error presented as "Network is unreachable" in the installer.
 
-**Root cause:** VPN was active on the host MacBook and intercepting UTM's shared network (NAT) traffic. UTM's NAT operates on an internal subnet (192.168.64.x) that routes through the Mac's network stack. VPN intercepted this traffic before it could reach the internet.
+**Root cause:** VPN was active on the host MacBook and intercepting UTM's shared network (NAT) traffic. UTM's NAT operates on an internal subnet that routes through the Mac's network. VPN intercepted this traffic before it could reach the internet.
 
 **Resolution:** Disabling VPN on the host resolved the issue immediately. This is a known limitation of this particular VPN provider on macOS — Apple's network extension restrictions prevent split tunnelling, meaning all traffic including VM NAT traffic is routed through the VPN tunnel.
 
-**Static IP configuration:** When DHCP failed during initial installation attempts, manually configured a static IP using UTM's internal NAT subnet (192.168.64.x) rather than the home network range, which would not have been routable through the NAT gateway.
+**Static IP configuration:** When DHCP failed during initial installation attempts, manually configured a static IP using UTM's internal NAT subnet rather than the home network range, which would not have been routable through the NAT gateway.
 
 ---
 
