@@ -43,7 +43,7 @@ Prior to this project, the network was using ISP-provided DNS with no filtering.
 
 ## Considerations & Tradeoffs
 
-**iCloud Private Relay compatibility** — DNS filtering services can conflict with iCloud Private Relay, as both attempt to handle DNS resolution. iOS detects when Private Relay's required endpoints are being intercepted and flags the network as incompatible. This is an inherent tension between two privacy-focused tools rather than a misconfiguration.
+**iCloud Private Relay compatibility** — DNS filtering services can conflict with iCloud Private Relay, as both attempt to handle DNS resolution. iOS detects when Private Relay's required endpoints are being intercepted and flags the network as incompatible.
 
 **Per-device visibility** — Router-level DNS sends all queries through a single router identity. NextDNS logs show queries but not which individual device made them. Per-device visibility would require either the NextDNS CLI (requires custom firmware on the router) or installing the NextDNS app on individual devices. Assessed as a nice-to-have for this use case.
 
@@ -53,7 +53,7 @@ Prior to this project, the network was using ISP-provided DNS with no filtering.
 
 ## Skills Demonstrated
 
-`DNS security` `Encrypted DNS (DoT)` `Network-level security controls` `Solution evaluation` `Router configuration` `Privacy considerations in security tooling`
+`DNS security` `Encrypted DNS (DoT)` `Network-level security controls` `Solution evaluation` `Router configuration`
 
 ---
 
