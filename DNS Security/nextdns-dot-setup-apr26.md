@@ -18,7 +18,7 @@ Prior to this project, the network was using ISP-provided DNS with no filtering.
 |---------|-------------|-------------------|------------------|-------|
 | ISP Default | No | No | No | Baseline, no filtering |
 | Cloudflare 1.1.1.1 | No | No | No | Privacy focused, speed optimised |
-| Control D (free) | Limited | Yes | No | No configuration without account |
+| Control D (free) | Yes | Yes | No | No configuration without account |
 | AdGuard DNS | Yes | Yes | No | Drop-in, no configuration |
 | NextDNS | Yes | Yes | Yes (free tier) | Configurable, DoT/DoH support |
 
