@@ -1,4 +1,4 @@
-# AI-Assisted Documentation & Critical Evaluation
+# Documentation Process
 
 ## Overview
 
