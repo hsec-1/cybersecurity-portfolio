@@ -1,4 +1,4 @@
-# NextDNS with DNS-over-TLS Implementation — April 2026
+# NextDNS with DNS-over-TLS (DoT) Implementation — April 2026
 
 ## Overview
 
