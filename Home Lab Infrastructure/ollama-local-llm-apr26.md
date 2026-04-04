@@ -34,7 +34,7 @@ Deployed Ollama on a Windows workstation and evaluated multiple open source larg
 | Llama3.2:3b | Dense | 3B | 3B | Fast but unreliable, frequent hallucination |
 | Gemma4:26b | Mixture of Experts | 26B | ~4B | Strong reasoning, ~45s/response — good balance of speed and quality |
 
-**Selected: Gemma4:27b** — The Mixture of Experts architecture activates only ~4 billion parameters during inference despite having 26 billion total, delivering reasoning quality comparable to much larger dense models at a fraction of the compute cost. This makes it well suited to consumer hardware with limited VRAM.
+**Selected: Gemma4:26b** — The Mixture of Experts architecture activates only ~4 billion parameters during inference despite having 26 billion total, delivering reasoning quality comparable to much larger dense models at a fraction of the compute cost. This makes it well suited to consumer hardware with limited VRAM.
 
 ---
 
