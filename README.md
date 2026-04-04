@@ -1,7 +1,7 @@
 
 # Cybersecurity Portfolio
 
-Self-directed learning portfolio documenting hands-on projects undertaken while studying for an entry level cybersecurity role. All documentation was critically reviewed for technical accuracy, sensitive information disclosure and honest representation of work completed — the process is documented [here](AI%20Security%20Research/ai-assisted-documentation-apr26.md).
+Self-directed learning portfolio documenting hands-on projects undertaken while studying for an entry level cybersecurity role. All documentation was critically reviewed for technical accuracy, sensitive information disclosure and honest representation of work completed — the process is documented [here](METHODOLOGY.md).
 
 ---
 
