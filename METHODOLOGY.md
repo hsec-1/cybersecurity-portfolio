@@ -2,9 +2,7 @@
 
 ## Overview
 
-AI assistance is used throughout this portfolio to help structure and articulate findings from hands-on work. This document describes the process — specifically the critical evaluation required to use AI assistance responsibly and accurately.
-
-The goal is not to have AI write the portfolio, but to use it as a documentation tool while maintaining responsibility for accuracy, security and honest representation of the work done.
+AI assistance is used throughout this portfolio to help structure and articulate findings from hands-on work. The goal is not to have AI write the portfolio, but to use it as a documentation tool while maintaining responsibility for accuracy, security and honest representation of the work done. This document describes that process.
 
 ---
 
