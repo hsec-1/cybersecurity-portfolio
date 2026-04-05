@@ -19,7 +19,7 @@ Self-directed learning portfolio documenting hands-on projects undertaken while 
 
 ## Tools & Technologies
 
-`Ubuntu` `UTM` `QEMU` `OpenClaw` `Ollama` `Gemma3` `Gemma4` `ASUS GT-AX6000` `Guest Network Pro` `VLAN` `NextDNS` `DNS-over-TLS` `OpenRouter` `SQL`
+`Ubuntu` `UTM` `QEMU` `OpenClaw` `Ollama` `Gemma3` `Gemma4` `ASUS GT-AX6000` `Guest Network Pro` `VLAN` `NextDNS` `DNS-over-TLS` `OpenRouter` `SQL` `MariaDB`
 
 ---
 
