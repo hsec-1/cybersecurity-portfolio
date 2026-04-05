@@ -1,4 +1,3 @@
-
 # Cybersecurity Portfolio
 
 Self-directed learning portfolio documenting hands-on projects undertaken while studying for an entry level cybersecurity role. All documentation was critically reviewed for technical accuracy, sensitive information disclosure and honest representation of work completed — the process is documented [here](METHODOLOGY.md).
@@ -9,11 +8,10 @@ Self-directed learning portfolio documenting hands-on projects undertaken while 
 
 | Topic | Skills Demonstrated |
 | --- | --- |
-| [Network Security](Network%20Security/README.md) | Network segmentation, VLAN configuration, IoT isolation, NAT analysis, log auditing |
-| [Linux & Virtualisation](Linux%20%26%20Virtualisation/README.md) | VM deployment, Linux administration, network troubleshooting, SSH |
-| [DNS Security](DNS%20Security/README.md) | Encrypted DNS (DoT), DNS filtering, privacy configuration |
-| [AI Security Research](AI%20Security%20Research/README.md) | AI agent security, threat research, prompt injection, security auditing, critical evaluation of AI outputs |
-| [Home Lab Infrastructure](Home%20Lab%20Infrastructure/README.md) | Local LLM deployment, model evaluation, network service configuration |
+| [Incident Response](Incident%20Response/README.md) | Supply chain attack analysis, incident response, network segmentation, VLAN configuration, IoT isolation, NAT analysis, log auditing |
+| [Network Security](Network%20Security/README.md) | Encrypted DNS (DoT), DNS filtering, privacy configuration, router configuration |
+| [Security Auditing & Risk Assessment](Security%20Auditing%20%26%20Risk%20Assessment/README.md) | AI agent security, threat research, prompt injection, security auditing |
+| [Lab Infrastructure](Lab%20Infrastructure/README.md) | VM deployment, Linux administration, network troubleshooting, SSH, local LLM deployment, model evaluation |
 
 ---
 

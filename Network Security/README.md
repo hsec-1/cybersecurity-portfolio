@@ -1,10 +1,10 @@
 # Network Security
 
-Hands-on projects covering network segmentation, IoT isolation, traffic analysis and log auditing.
+Projects covering network hardening, monitoring and access control.
 
 | Document | Description | Date |
-|----------|-------------|------|
-| [VLAN & IoT Network Segmentation](vlan-iot-segmentation-apr26.md) | Implemented IoT network isolation following malware infection | April 2026 |
+| --- | --- | --- |
+| [NextDNS with DNS-over-TLS](nextdns-dot-setup-apr26.md) | Implemented encrypted DNS filtering across home network | April 2026 |
 
 ---
 
