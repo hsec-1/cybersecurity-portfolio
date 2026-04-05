@@ -13,6 +13,7 @@ Self-directed learning portfolio documenting hands-on projects undertaken while 
 | [Security Auditing & Risk Assessment](Security%20Auditing%20%26%20Risk%20Assessment/README.md) | AI agent security, threat research, prompt injection, security auditing |
 | [Scripting & Automation](Scripting%20%26%20Automation/README.md) | SQL filtering, data analysis, security log investigation |
 | [Lab Infrastructure](Lab%20Infrastructure/README.md) | VM deployment, Linux administration, network troubleshooting, SSH, local LLM deployment, model evaluation |
+| [Coursework](Coursework/README.md) | Incident identification, network traffic analysis, TCP/IP, DoS analysis, NIST framework, risk assessment, security hardening |
 
 ---
 
