@@ -11,6 +11,7 @@ Self-directed learning portfolio documenting hands-on projects undertaken while 
 | [Incident Response](Incident%20Response/README.md) | Supply chain attack analysis, incident response, network segmentation, VLAN configuration, IoT isolation, NAT analysis, log auditing |
 | [Network Security](Network%20Security/README.md) | Encrypted DNS (DoT), DNS filtering, privacy configuration, router configuration |
 | [Security Auditing & Risk Assessment](Security%20Auditing%20%26%20Risk%20Assessment/README.md) | AI agent security, threat research, prompt injection, security auditing |
+| [Scripting & Automation](Scripting%20%26%20Automation/README.md) | SQL filtering, data analysis, security log investigation |
 | [Lab Infrastructure](Lab%20Infrastructure/README.md) | VM deployment, Linux administration, network troubleshooting, SSH, local LLM deployment, model evaluation |
 
 ---
