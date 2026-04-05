@@ -32,6 +32,7 @@ The following are real examples of issues identified and corrected during the do
 **Inaccurate framing**
 - AI agent security work was described as "prompt injection research" when the actual work involved reading published research and running a built-in audit tool — corrected to accurately reflect scope
 - A remediation step was described as a deliberate security fix when it was not the purpose of the change — corrected to reflect that the finding was noted but not remediated
+- The network security document described the SmartTube compromise as malware being "injected upstream of the signing and distribution process" — implying the compromise occurred in a dependency or third-party build tool before reaching the developer. In fact, the developer's own build machine was infected, meaning the malware was inserted during compilation on his computer and the infected APK was then signed and distributed through official channels as normal. Corrected to accurately reflect the point of compromise.
 
 **Technical inaccuracies**
 - A model parameter count was referenced incorrectly throughout a document (26b written as 27b)
