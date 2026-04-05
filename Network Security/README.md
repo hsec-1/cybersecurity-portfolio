@@ -4,7 +4,7 @@ Hands-on projects covering network segmentation, IoT isolation, traffic analysis
 
 | Document | Description | Date |
 |----------|-------------|------|
-| [VLAN & IoT Network Segmentation](vlan-iot-segmentation-apr26.md) | Implemented IoT network isolation following Vo1d malware infection | April 2026 |
+| [VLAN & IoT Network Segmentation](vlan-iot-segmentation-apr26.md) | Implemented IoT network isolation following malware infection | April 2026 |
 
 ---
 
