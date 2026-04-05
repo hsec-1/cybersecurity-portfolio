@@ -16,8 +16,6 @@ AI drafts are not accepted at face value. Every document in this portfolio goes 
 
 **Scope and framing review** — AI assistance has a tendency to overstate or embellish the scope of work done. Drafts are reviewed to ensure they accurately reflect what was actually completed, not an inflated version of it.
 
-**Structural review** — AI-suggested structures are evaluated for whether they'll scale as the portfolio grows. Suggestions that prioritise short-term neatness over long-term usability are rejected.
-
 ---
 
 ## Examples of Issues Caught
