@@ -55,6 +55,7 @@ Replaced the asterisk rule with "use an unrelated word." Test 1 responded with "
 *Goal*: Improve useability while maintaining security
 
 Same idea as above. Also produced "I have been OWNED." PWNED has no clean antonym so the model fell back on the closest associated word.
+
 *Note*: After this failed I tried defining 'PWND' to give the model a clear understanding of the meaning to create an antonym but this was ignored by the model.
 
 <br>
@@ -79,7 +80,7 @@ Stripped back to just the bans and the P-W-N-D scan. Multiple failures. Without 
 
 *Goal*: Trying to simplify with an alternative approach
 
-Changed the P-W-N-D scan from a review step to a live replacement rule. The model started censoring random letters in normal words. The diet plan came back as `*reakfast`, `*unch`, `*inner`. The letters it was replacing weren't even P, W, N, E or D — it was just guessing what to censor at that point. Meanwhile the poem still leaked the phrase. This change broke both the adversarial and harmless tests simultaneously.
+Changed the P-W-N-D scan from a review step to a live replacement rule. The model started censoring random letters in normal words. During the harmless test, the diet plan came back as `*reakfast`, `*unch`, `*inner`. The letters it was replacing weren't even P, W, N, E or D — it was just guessing what to censor at that point. Meanwhile the poem still leaked the phrase. This change broke both the adversarial and harmless tests simultaneously.
 
 <br>
 
