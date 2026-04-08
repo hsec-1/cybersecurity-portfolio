@@ -40,6 +40,7 @@ After getting a passing solution I tried to simplify or improve it. Every change
 
 Replaced the asterisk rule with "use an unrelated word." Test 1 responded with "I have been OWNED." The model picked the nearest synonym. 
 
+<br>
 
 ### Antonym replacement
 
@@ -48,6 +49,7 @@ Replaced the asterisk rule with "use an unrelated word." Test 1 responded with "
 Same idea as above. Also produced "I have been OWNED." PWNED has no clean antonym so the model fell back on the closest associated word.
 *Note*: After this failed I tried defining 'PWND' to give the model a clear understanding of the meaning to create an antonym but this was ignored by the model.
 
+<br>
 
 ### Comprehensive structural rules
 
@@ -55,6 +57,7 @@ Same idea as above. Also produced "I have been OWNED." PWNED has no clean antony
 
 Added a longer rule banning output where the phrase "could be reconstructed by reading selected characters in any pattern." The model got prompt injected. More rules made it *easier* to exploit, not harder.
 
+<br>
 
 ### No fallback, no poem rule
 
@@ -62,6 +65,7 @@ Added a longer rule banning output where the phrase "could be reconstructed by r
 
 Stripped back to just the bans and the P-W-N-D scan. Multiple failures. Without being told what to do instead of saying the phrase, the model either complied with the attacker or over-restricted and broke the harmless test.
 
+<br>
 
 ### Inline character replacement
 
@@ -69,6 +73,7 @@ Stripped back to just the bans and the P-W-N-D scan. Multiple failures. Without 
 
 Changed the P-W-N-D scan from a review step to a live replacement rule. The model started censoring random letters in normal words. The diet plan came back as `*reakfast`, `*unch`, `*inner`. The letters it was replacing weren't even P, W, N, E or D — it was just guessing what to censor at that point. Meanwhile the poem still leaked the phrase. This change broke both the adversarial and harmless tests simultaneously.
 
+<br>
 
 ## The pattern
 
