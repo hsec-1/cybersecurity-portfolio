@@ -91,7 +91,7 @@ The complexity finding was the most surprising. More comprehensive rules made th
 
 <br>
 
-## What this tells you about AI security
+## Conclusion
 
 System prompts are suggestions. The model interprets them probabilistically — under normal conditions it follows the rules, under adversarial pressure it doesn't. That's why prompt injection is unsolvable at the prompt level alone. Real-world defence needs output filters, tool restrictions, and human approval outside the model. 
 It's clear that the attackers have the advantage. If a defender tries to create a complex system prompt to combat all the attack vectors possible, the model becomes unuseful. If a defender tries to cover all attack vectors with a few simple rules, there are workarounds that attackers can exploit. 
