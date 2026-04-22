@@ -8,33 +8,25 @@ A collection of incident reports and security assessments completed as part of t
 
 ## Data Leak
 
-### Incident Summary
-
-A sales manager shared access to a folder of internal-only documents with their team during a meeting. The folder contained files associated with a new product that has not been publicly announced. It also included customer analytics and promotional materials. After the meeting, the manager did not revoke access to the internal folder, but warned the team to wait for approval before sharing the promotional materials with others.
-
-During a video call with a business partner, a member of the sales team forgot the warning from their manager. The sales representative intended to share a link to the promotional materials so that the business partner could circulate the materials to their customers. However, the sales representative accidentally shared a link to the internal folder instead. Later, the business partner posted the link on their company's social media page assuming that it was the promotional materials.
-
+**Scenario:** A sales manager shared access to a folder of internal-only documents with their team during a meeting. The folder contained files associated with a new product that has not been publicly announced. It also included customer analytics and promotional materials. After the meeting, the manager did not revoke access to the internal folder, but warned the team to wait for approval before sharing the promotional materials with others. During a video call with a business partner, a member of the sales team forgot the warning from their manager. The sales representative intended to share a link to the promotional materials so that the business partner could circulate the materials to their customers. However, the sales representative accidentally shared a link to the internal folder instead. Later, the business partner posted the link on their company's social media page assuming that it was the promotional materials.
 
 ### Control
 Least Privilege
 
-
-
 ### Issue(s)
+
 *What factors contributed to the information leak?*
 
 The CSR required access to the promotional materials stored in the folder, however, the folder also contained sensitive information. This created unnecessary access to private data. This failure mode should not be possible with a properly structured file system where confidential data is separated from non-confidential data.
 
-
-
 ### Review
+
 *What does NIST SP 800-53: AC-6 address?*
 
 NIST SP 800-53: AC-6 addresses the principle of least privilege, where a user must be identified and only granted the least access required to perform their function. It suggests controls such as role based restriction and automatic access revocation as enhancements to bolster privacy posture.
 
-
-
 ### Recommendation(s)
+
 *How might the principle of least privilege be improved at the company?*
 
 PoLP Improvements:
@@ -43,9 +35,8 @@ PoLP Improvements:
 2. Role base access restrictions
 3. Ability to share for set time with automatic revocation
 
-
-
 ### Justification
+
 *How might these improvements address the issues?*
 
 1. Structural separation of data categories allows users to continue performing their function without unnecessarily providing access to sensitive information.
