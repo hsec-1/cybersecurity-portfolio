@@ -8,6 +8,10 @@ A collection of incident reports and security assessments completed as part of t
 
 ## Data Leak
 
+*The course exemplar missed the root cause.*
+
+The exemplar focused on procedural failures - access wasn't revoked, the folder wasn't restricted to internal users only. These are just symptoms of the underlying problem. Sensitive and non-sensitive data was housed in the same folder. Regardless of what the rep was trying to do, the folder design created unnecessary exposure to confidential information.
+
 **Scenario:** A sales manager shared access to a folder of internal-only documents with their team during a meeting. The folder contained files associated with a new product that has not been publicly announced. It also included customer analytics and promotional materials. After the meeting, the manager did not revoke access to the internal folder, but warned the team to wait for approval before sharing the promotional materials with others. During a video call with a business partner, a member of the sales team forgot the warning from their manager. The sales representative intended to share a link to the promotional materials so that the business partner could circulate the materials to their customers. However, the sales representative accidentally shared a link to the internal folder instead. Later, the business partner posted the link on their company's social media page assuming that it was the promotional materials.
 
 ### Control
