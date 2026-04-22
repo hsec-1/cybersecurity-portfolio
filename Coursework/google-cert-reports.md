@@ -19,7 +19,7 @@ The exemplar focused on procedural failures - access wasn't revoked, the folder 
 
 *What factors contributed to the information leak?*
 
-Promotional materials were stored in the folder along with sensitive information. This created unnecessary access to private data. This failure mode should not be possible with a properly structured file system where confidential data is separated from non-confidential data.
+Promotional materials designed for external sharing were stored in the folder along with sensitive information. This created unnecessary access to private data. This failure mode should not be possible with a properly structured file system where confidential data is separated from non-confidential data.
 
 ### Review
 
