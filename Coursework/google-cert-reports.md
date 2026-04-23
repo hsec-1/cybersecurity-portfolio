@@ -6,6 +6,28 @@ A collection of incident reports and security assessments completed as part of t
 
 ---
 
+## Access Controls — Payroll Fraud Investigation
+
+**Scenario:** A deposit was made from the business to an unknown bank account. The finance manager denied making the transaction. Investigate the access logs to identify the threat actor and recommend mitigations.
+
+### Notes
+
+The event log shows a payroll event adding 'FAUX_BANK' was executed on 10/03/2023 at 8:29:57 AM from IP address 152.207.255.255 under the Legal\Administrator account from a computer named 'Up2-NoGud'. Cross-referencing the employee directory identifies this IP address as belonging to Robert Taylor Jr., a legal contractor whose end date was 12/27/19 — over three years before the incident.
+
+### Issues
+
+- Robert Taylor Jr.'s account was not deprovisioned on his end date, leaving active admin credentials available to a threat actor more than three years after his contract ended
+- All employees regardless of role are assigned admin authorisation, violating the principle of least privilege and creating unnecessary attack surface
+
+### Recommendations
+
+- Implement an offboarding process that automatically deprovisions accounts on the employee end date
+- Implement role-based access control — admin privileges should not be a default for all users
+- Implement MFA to prevent unauthorised use of compromised credentials
+- Conduct regular audits of active credentials to identify and remove accounts that should no longer have access
+
+---
+
 ## Data Leak
 
 *The course exemplar missed the root cause.*
@@ -14,6 +36,8 @@ The exemplar focused on procedural failures - access wasn't revoked, the folder 
 
 **Scenario:** A sales manager shared access to a folder of internal-only documents with their team during a meeting. The folder contained files associated with a new product that has not been publicly announced. It also included customer analytics and promotional materials. After the meeting, the manager did not revoke access to the internal folder, but warned the team to wait for approval before sharing the promotional materials with others. During a video call with a business partner, a member of the sales team forgot the warning from their manager. The sales representative intended to share a link to the promotional materials so that the business partner could circulate the materials to their customers. However, the sales representative accidentally shared a link to the internal folder instead. Later, the business partner posted the link on their company's social media page assuming that it was the promotional materials.
 
+### Control
+Least Privilege
 
 ### Issue(s)
 
@@ -44,6 +68,36 @@ PoLP Improvements:
 1. Structural separation of data categories allows users to continue performing their function without unnecessarily providing access to sensitive information.
 2. Role base access restriction creates a baseline to ensure that users do not have access to information they do not need to fulfil their function.
 3. Automatic revocation acts as a safety net and removes human error from the revocation process.
+
+---
+
+## NIST Cybersecurity Framework — Incident Report
+
+**Scenario:** Apply the NIST Cybersecurity Framework to document and respond to a network security incident.
+
+### Summary
+
+The organisation's network was the target of a Denial of Service attack by a malicious actor. The incident caused a network outage for roughly two hours. The incident was traced to a flood of ICMP packets through an unconfigured firewall. The incident management team responded by stopping all non-critical network services and restoring critical services.
+
+### Identify
+
+The attack was an ICMP flood DoS that affected internal network operations. The primary cause of the incident was an unconfigured firewall that allowed ICMP packets without a rate limit.
+
+### Protect
+
+The team has implemented new firewall rules to limit the rate of incoming ICMP packets. Additionally, source IP verification has been implemented to check for spoofed IP addresses.
+
+### Detect
+
+New network monitoring software has been implemented to detect and flag abnormal network traffic patterns. Additionally, an IDS/IPS system has been rolled out to filter out some ICMP traffic based on suspicious characteristics.
+
+### Respond
+
+The team will respond to future similar incidents by rate limiting ICMP packets at the firewall, taking down non-critical network services if necessary, and restoring critical services as a priority. Communication to internal staff and external customers will be provided if the outage will be prolonged.
+
+### Recover
+
+After the incident, network operations were returned to normal status while prioritising critical services first. The team will continue monitoring the network for stability and seek to mitigate any future incidents using the new tools listed above.
 
 ---
 
@@ -103,37 +157,7 @@ The UDP protocol reveals that port 53 was unreachable. The ICMP echo reply retur
 
 ---
 
-## NIST Cybersecurity Framework — Incident Report
-
-**Scenario:** Apply the NIST Cybersecurity Framework to document and respond to a network security incident.
-
-### Summary
-
-The organisation's network was the target of a Denial of Service attack by a malicious actor. The incident caused a network outage for roughly two hours. The incident was traced to a flood of ICMP packets through an unconfigured firewall. The incident management team responded by stopping all non-critical network services and restoring critical services.
-
-### Identify
-
-The attack was an ICMP flood DoS that affected internal network operations. The primary cause of the incident was an unconfigured firewall that allowed ICMP packets without a rate limit.
-
-### Protect
-
-The team has implemented new firewall rules to limit the rate of incoming ICMP packets. Additionally, source IP verification has been implemented to check for spoofed IP addresses.
-
-### Detect
-
-New network monitoring software has been implemented to detect and flag abnormal network traffic patterns. Additionally, an IDS/IPS system has been rolled out to filter out some ICMP traffic based on suspicious characteristics.
-
-### Respond
-
-The team will respond to future similar incidents by rate limiting ICMP packets at the firewall, taking down non-critical network services if necessary, and restoring critical services as a priority. Communication to internal staff and external customers will be provided if the outage will be prolonged.
-
-### Recover
-
-After the incident, network operations were returned to normal status while prioritising critical services first. The team will continue monitoring the network for stability and seek to mitigate any future incidents using the new tools listed above.
-
----
-
-## 5. Security Incident Report — HTTP & Brute Force Attack
+## Security Incident Report — HTTP & Brute Force Attack
 
 **Scenario:** Customers report being prompted to download a suspicious file when visiting a website. Analyse traffic logs to document the incident and recommend remediation.
 
