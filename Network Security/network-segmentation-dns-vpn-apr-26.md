@@ -2,7 +2,7 @@
 
 ## Overview
 
-Redesigned a home network around tiered segmentation, per-device DNS visibility and per-network VPN routing. Built on top of an earlier DNS filtering project (see below), this work extends the network's security posture from DNS filtering alone to a layered architecture with explicit trust zones, network-level VPN routing for specific device classes, and per-device DNS monitoring.
+Redesigned a home network around tiered segmentation, per-device DNS visibility and per-network VPN routing. Built on top of an earlier DNS filtering project (see below), this work extends the network's security posture from DNS filtering alone to a layered architecture with explicit trust zones, network-level VPN routing for specific device classes, and per-device DNS monitoring. The focus on IoT segmentation was informed by a prior real-world compromise of an IoT device on my network, which highlighted the risk of lateral movement in a flat network.
 
 ## Background
 
@@ -71,7 +71,8 @@ The mitigations map to those threats: segmentation limits lateral movement, sepa
 
 - **Trusted IoT tier with one-way routing.** Requires custom iptables scripting to implement properly. Deferred until the maintenance overhead is justified by a concrete need.
 - **Per-household-member NextDNS profile.** A single strict profile is currently applied network-wide; splitting would add management overhead without clear benefit at this stage.
-- **Intrusion detection.** No IDS layer beyond DNS-based threat intelligence. A future improvement would be deploying something like Suricata on a dedicated host.
+- **Intrusion detection.** No IDS layer beyond DNS-based threat intelligence. IDS implementation is a planned future project.
+- **Segment restrictions** Segmentation relies primarily on router-enforced isolation rather than custom firewall rules, which is a current limitation.
 
 ## What I learned from this project
 
