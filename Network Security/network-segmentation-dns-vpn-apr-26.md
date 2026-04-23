@@ -75,9 +75,10 @@ The mitigations map to those threats: segmentation limits lateral movement, sepa
 
 ## What I learned from this project
 
-- Not every layer needs a security control — stacking controls without clear reasoning creates maintenance burden without proportional benefit.
+- Security measures should be implemented with mitigation of a specific threat in mind — stacking controls without clear reasoning creates maintenance burden without proportional benefit.
 - Measured performance data can overturn a reasonable-looking design. The router-level VPN decision was only correct in theory.
 - Segmentation design is constrained by network hardware (in this case, an existing unmanaged switch shared by multiple rooms), not just logical preference.
+- How to layer controls so no single failure leads to a full compromise (defense in depth). For example, encrypted VPNs and DNS filtering reduce exposure to malicious traffic, while port isolation and network segmentation limit lateral movement. Even if one control fails, the others should still contain the impact.
 
 ---
 
