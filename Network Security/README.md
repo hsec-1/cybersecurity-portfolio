@@ -5,6 +5,7 @@ Projects covering network hardening, monitoring and access control.
 | Document | Description | Date |
 | --- | --- | --- |
 | [NextDNS with DNS-over-TLS](nextdns-dot-setup-apr26.md) | Implemented encrypted DNS filtering across home network | April 2026 |
+| [Network Segmentation, VPN and DNS Filtering Implementation](network-segmentation-vpn-and-dns-filtering-implementation-apr-26.md) | Implemented encrypted DNS filtering across home network | April 2026 |
 
 ---
 
