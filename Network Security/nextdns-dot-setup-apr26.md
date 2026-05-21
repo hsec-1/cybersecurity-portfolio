@@ -57,4 +57,4 @@ Prior to this project, the network was using ISP-provided DNS with no filtering.
 
 ---
 
-[← Back to DNS Security](README.md) | [← Back to Portfolio](../README.md)
+[← Back to Network Security](README.md) | [← Back to Portfolio](../README.md)
