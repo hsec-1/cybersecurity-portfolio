@@ -70,4 +70,4 @@ Running local models means inference occurs entirely on-device with no data tran
 
 ---
 
-[← Back to Home Lab Infrastructure](README.md) | [← Back to Portfolio](../README.md)
+[← Back to Lab Infrastructure](README.md) | [← Back to Portfolio](../README.md)
