@@ -38,7 +38,7 @@ Network architecture, segmentation, and DNS-level security controls.
 
 | Document | Description | Date |
 | --- | --- | --- |
-| [Network Segmentation, VPN and DNS Filtering](Network%20Security/network-segmentation-dns-vpn.md) | Tiered network segmentation, per-network VPN routing, per-device DNS visibility via NextDNS CLI on router firmware | April 2026 |
+| [Network Segmentation, VPN and DNS Filtering](Network%20Security/network-segmentation-dns-vpn-apr26.md) | Tiered network segmentation, per-network VPN routing, per-device DNS visibility via NextDNS CLI on router firmware | April 2026 |
 | [Encrypted DNS-over-TLS Implementation](Network%20Security/nextdns-dot-setup-apr26.md) | Evaluated DNS filtering solutions and implemented network-wide encrypted DNS with NextDNS via DoT | April 2026 |
 
 ---
