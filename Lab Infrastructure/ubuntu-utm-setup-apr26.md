@@ -44,4 +44,4 @@ During installation, the VM was unable to reach the Ubuntu mirror servers or the
 
 ---
 
-[← Back to Linux & Virtualisation](README.md) | [← Back to Portfolio](../README.md)
+[← Back to Lab Infrastructure](README.md) | [← Back to Portfolio](../README.md)
