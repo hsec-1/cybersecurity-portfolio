@@ -24,15 +24,15 @@ _2-3 sentences. What happened, what was affected, what was done about it. Write 
 
 ## 2. Timeline
 
-| Time | Event |
-|---|---|
-| | _First indicator observed_ |
-| | _Investigation began_ |
-| | _Scope confirmed_ |
-| | _Containment applied_ |
-| | _Eradication completed_ |
-| | _Recovery completed_ |
-| | _Incident closed_ |
+| Date | Time | Event |
+|---|---|---|
+| | | _First indicator observed_ |
+| | | _Investigation began_ |
+| | | _Scope confirmed_ |
+| | | _Containment applied_ |
+| | | _Eradication completed_ |
+| | | _Recovery completed_ |
+| | | _Incident closed_ |
 
 ---
 
