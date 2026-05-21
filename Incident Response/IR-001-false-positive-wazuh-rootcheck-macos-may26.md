@@ -112,7 +112,7 @@ Recommend setting a rule that triggers based on detection frequency on the same 
 
 ## Skills Demonstrated
 
-`Wazuh` `SIEM tuning` `False positive analysis` `Rootcheck` `macOS` `Custom rule writing` `Alert triage`
+`Wazuh` `Alert tuning` `Detection engineering` `False positive analysis` `Rootcheck` `macOS` `Custom rule writing` 
 
 ---
 
