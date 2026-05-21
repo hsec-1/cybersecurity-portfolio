@@ -45,3 +45,7 @@ _If remediated — what exactly did you do?_
 
 ## References
 _CVE links, vendor advisories, documentation used during investigation_
+
+---
+
+[← Back to Templates](README.md) | [← Back to Portfolio](../README.md)
