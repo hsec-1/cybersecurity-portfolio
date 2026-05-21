@@ -89,3 +89,8 @@ _Are there policies or procedures that need updating?_
 
 ## References
 _Wazuh alert links, relevant CVEs, external threat intel, internal documentation_
+
+
+---
+
+[← Back to Templates](README.md) | [← Back to Portfolio](../README.md)
