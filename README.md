@@ -13,7 +13,7 @@ Highlights from real-world investigations, applied research, and coursework.
 | Document | Description | Date |
 | --- | --- | --- |
 | [IR-001 False-Positive Wazuh Rootcheck on macOS](Incident%20Response/IR-001-false-positive-wazuh-rootcheck-macos-may26.md) | Investigated Wazuh alert and determined false positive across two distinct root causes. Implemented scoped detection rule changes with documented limitations | May 2026 |
-| [Network Segmentation, VPN and DNS Filtering](Network%20Security/network-segmentation-dns-vpn.md) | Tiered network architecture with per-segment VPN routing and per-device DNS visibility. Performance-driven design with documented deferrals | April 2026 |
+| [Network Segmentation, VPN and DNS Filtering](Network%20Security/network-segmentation-dns-vpn-apr26.md) | Tiered network architecture with per-segment VPN routing and per-device DNS visibility. Performance-driven design with documented deferrals | April 2026 |
 | [SmartTube Compromise & IoT Network Segmentation](Incident%20Response/vlan-iot-segmentation-apr26.md) | Responded to a real supply chain compromise affecting IoT devices on the home network. Implemented VLAN segmentation as a defence-in-depth control | April 2026 |
 | [Reverse Gandalf — System Prompt Defence Research](Risk%20%26%20Compliance/reverse-gandalf-apr26.md) | Built and tested a defensive system prompt against adversarial input. Documented how simpler rules outperformed comprehensive ones under pressure | April 2026 |
 | [Database Vulnerability Assessment](Coursework/database-vulnerability-assessment-google-may26.md) | Risk assessment of a publicly exposed database server using NIST SP 800-30. Threat modelling, likelihood/severity scoring, sequenced remediation plan | May 2026 |
