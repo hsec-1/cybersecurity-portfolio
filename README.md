@@ -1,8 +1,8 @@
 # Cybersecurity Portfolio
 
-Self-directed work toward a role in cyber security. Hands-on investigations, lab infrastructure, security research, and coursework. Built and documented while transitioning into the industry from a background in technology startups and small business operations.
+Self-directed work toward a role in cyber security. Hands-on investigations, lab infrastructure, security research, and coursework.
 
-For an honest description of how AI tools were used in producing this portfolio, see [METHODOLOGY.md](METHODOLOGY.md).
+For a description of how AI tools were used in producing this portfolio, see [METHODOLOGY.md](METHODOLOGY.md).
 
 ---
 
