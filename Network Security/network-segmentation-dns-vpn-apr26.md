@@ -89,4 +89,4 @@ The mitigations map to those threats: segmentation limits lateral movement, sepa
 
 ---
 
-[← Back to Portfolio](../README.md) | [See also: NextDNS with DoT Implementation](nextdns-dot-setup-arp26.md)
+[← Back to Network Security](README.md) | [← Back to Portfolio](../README.md) | [See also: NextDNS with DoT Implementation](nextdns-dot-setup-arp26.md)
