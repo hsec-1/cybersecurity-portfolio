@@ -87,4 +87,4 @@ This incident demonstrated that sideloaded applications — even well-known open
 
 ---
 
-[← Back to Network Security](README.md) | [← Back to Portfolio](../README.md)
+[← Back to Incident Response](README.md) | [← Back to Portfolio](../README.md)
