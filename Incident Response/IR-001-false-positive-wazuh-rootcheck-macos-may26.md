@@ -109,3 +109,6 @@ False positives on other random ports, used for temporary connections by macOS w
 Recommend setting a rule that triggers based on detection frequency on the same port over a set period of time, limited to high range ports(49152-65535), leaving lower range well known ports on standard detection rules. The idea behind this is to detect any ports that remain open but are genuinely hidden over a longer period of time which a threat actor could use for C2 or data exfiltration. 
 
 ---
+
+
+[← Back to Incident Response](README.md) | [← Back to Portfolio](../README.md)
