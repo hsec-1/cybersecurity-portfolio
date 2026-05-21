@@ -113,7 +113,7 @@ Full index in [Coursework/README.md](Coursework/README.md).
 
 **SIEM & detection** — `Wazuh` `rootcheck` `syscheck` `custom rule authoring` `false positive triage` `detection tuning`
 
-**Network security** — `VLAN segmentation` `IoT isolation` `VPN routing (OpenVPN, WireGuard)` `encrypted DNS (DoT)` `DNS filtering` `router hardening` `mDNS bridging analysis`
+**Network security** — `VLAN segmentation` `IoT isolation` `VPN routing (OpenVPN, WireGuard)` `encrypted DNS (DoT)` `DNS filtering` `router hardening`
 
 **Incident response** — `Alert triage` `evidence collection` `root cause analysis` `containment` `remediation planning` `IR documentation`
 
