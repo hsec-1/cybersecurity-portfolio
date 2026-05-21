@@ -110,5 +110,10 @@ Recommend setting a rule that triggers based on detection frequency on the same 
 
 ---
 
+## Skills Demonstrated
+
+`Wazuh` `SIEM tuning` `False positive analysis` `Rootcheck` `macOS` `Custom rule writing` `Alert triage`
+
+---
 
 [← Back to Incident Response](README.md) | [← Back to Portfolio](../README.md)
