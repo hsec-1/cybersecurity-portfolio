@@ -115,5 +115,14 @@ New local rules added to suppress alerts for these false positive trojan detecti
 
 Decision to suppress is justified due to compensating control in syscheck which monitors '/usr/bin' for any tampering every 12 hours plus scans on start. 
 
+---
+
+## Skills Demonstrated
+
+`Wazuh` `Rootcheck` `Linux` `Alert tuning` `Custom suppression rules` `False positive analysis` `Compensating controls`
+
+---
+
+[← Back to Incident Response](README.md) | [← Back to Portfolio](../README.md)
 
 --- 
