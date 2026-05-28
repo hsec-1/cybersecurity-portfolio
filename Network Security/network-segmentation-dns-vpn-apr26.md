@@ -17,7 +17,7 @@ Four network segments were created, each with a distinct purpose and routing pol
 | Segment | Devices | Router-level VPN | Rationale |
 |---|---|---|---|
 | Main | Personal devices (laptops, phones, tablets, PC, NAS) | AUS VPN with per-device exceptions | General privacy; exceptions where throughput matters |
-| Untrusted IoT | Streaming devices, robo vacuum, smart home devices | AUS VPN | Devices with poor security hygiene; IP masking for telemetry |
+| Untrusted IoT | Streaming devices, robo vacuum, smart home devices | AUS VPN | Devices with poor security hygiene |
 | US-Streaming | Single streaming device for geo-restricted services | US dedicated IP VPN | Geo-routing for services that require a US IP |
 | Restricted browsing | Devices set for restricted browsing | AUS VPN | Privacy layer and containment if devices are compromised |
 
