@@ -15,6 +15,7 @@ Google Play Protect detected and disabled the compromised app on affected device
 This is a textbook supply chain attack: the malware was injected at the build stage of a legitimate open source project, meaning users who installed or updated the app through official channels received compromised builds without any indication of tampering.
 
 **Affected devices:** Android TV Streaming Device, Android TV
+
 **Discovery:** November 2025
 
 **Initial remediation:**
@@ -23,17 +24,17 @@ This is a textbook supply chain attack: the malware was injected at the build st
 * Uninstalled all SmartTube versions; did not restore any app backups
 * Reviewed Google and YouTube account activity and permissions for unauthorised access
 * Revoked all active sessions as a precaution
-* Full credential rotation for associated and all critical accounts
+* Full credential rotation for associated accounts plus all critical accounts
 * Adopted a password manager for unique, strong credentials across all accounts
 * Updated router firmware to latest version
 
-**Residual risk:** Duration of infection was unknown, meaning the full scope of data access during the infection period could not be determined. The malware's capability to receive remote instructions meant potential exposure was not limited to the data collection observed in static analysis. Long-term network controls and mitigation strategies were warranted.
+**Residual risk:** Duration of infection was unknown, meaning the full scope of data access during the infection period could not be determined. If the malware had the capability to receive remote instructions means potential exposure may not limited to the data collection. Long-term network controls and mitigation strategies were prudent.
 
 ---
 
 ## Network Security Review
 
-**NAT table analysis** — Reviewed all active connections via the router's NAT table. Identified and verified each established connection against known devices and services. No suspicious external connections found post-remediation.
+**NAT table analysis** — Reviewed all active connections via the router's NAT table. Identified and verified each established connection against known devices and services. No suspicious external connections found.
 
 **Router log audit** — Reviewed system logs for unexpected admin login attempts. All login events were attributed to legitimate household devices and explained by router admin activity during the review.
 
