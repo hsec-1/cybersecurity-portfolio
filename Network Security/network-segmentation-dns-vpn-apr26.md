@@ -27,15 +27,15 @@ Each segment uses port and AP isolation within the guest network configuration t
 
 ### Least privilege applied to network design
 
-Each segment was assigned only the connectivity it needed. Untrusted IoT can reach the internet but cannot reach the Main network. Household devices are isolated from Main entirely. The US-Streaming segment is dedicated to one device with one specific purpose. This maps the principle of least privilege — commonly applied to user permissions — to network reachability.
+Each segment was assigned only the connectivity it needed. Untrusted IoT can reach the internet but cannot reach the Main network. The US-Streaming segment is dedicated to one device with one specific purpose. This maps the principle of least privilege — commonly applied to user permissions — to network configuration.
 
 ### Tiered IoT handling
 
-Two categories of IoT devices were considered: "untrusted" (devices with poor firmware update practices and telemetry habits, such as streaming boxes and robo vacuums) and "trusted" (devices with better security track records that also need local discovery, such as smart speakers and a smart lighting controller). A separate "Trusted IoT" segment was planned but ultimately deferred because cross-subnet service discovery requires either bidirectional routing (which weakens isolation) or custom firewall scripting to allow one-way access. For this iteration, trusted IoT devices were kept on the Main network while untrusted ones were segmented. This trade-off is documented as a known limitation with a plan to revisit.
+Two categories of IoT devices were considered: "untrusted" (devices with poor firmware update practices and telemetry habits, such as streaming boxes and robo vacuums) and "trusted" (devices with better security track records that also need local discovery, such as smart speakers and a smart lighting controller). A separate "Trusted IoT" segment was planned but ultimately deferred because cross-subnet service discovery requires either bidirectional routing (which weakens isolation) or custom firewall scripting to allow one-way access. For this iteration, trusted IoT devices were kept on the Main network while untrusted ones were segmented. This trade-off is a known limitation with a plan to revisit and explore mDNS configuration.
 
 ### Router-level vs device-level VPN
 
-Initial design routed all Main network traffic through a router-level VPN. Speed testing showed a significant throughput reduction — roughly 30% of the line speed — compared to direct WAN. This was consistent with the router CPU being the bottleneck for OpenVPN encryption.
+Initial design routed all Main network traffic through a router-level VPN. Speed testing showed a significant throughput reduction (roughly 30% of the line speed) compared to direct WAN. This was consistent with the router CPU being the bottleneck for OpenVPN encryption.
 
 Testing the vendor's VPN app directly on a laptop yielded approximately 85% of line speed using WireGuard, rather than OpenVPN. The architecture was then revised:
 
@@ -44,7 +44,7 @@ Testing the vendor's VPN app directly on a laptop yielded approximately 85% of l
 - Gaming devices excluded from VPN entirely for latency reasons
 - Per-device exceptions set via the router's VPN Director for specific devices on the Main network that need direct WAN
 
-This split was driven by measured performance data rather than a preconceived design, and balances privacy coverage against real-world usability for a multi-person household.
+This split was driven by measured performance data rather than the original design, balancing privacy coverage against real-world usability for a multi-person household.
 
 ### DNS filtering evolution
 
@@ -53,7 +53,7 @@ The previous DoT setup provided network-wide filtering but logged all queries un
 - Spotting anomalous behaviour from a single device
 - Identifying which device is responsible for a surge in blocked queries
 - Establishing a per-device baseline to make future anomalies easier to notice
-- Auditing and devices that ignore DNS configuration
+- Auditing for devices that ignore DNS configuration
 
 DNS Director was also configured to force all devices (including those that try to hardcode public DNS like 8.8.8.8) through the router's DNS, closing a common bypass path used by some IoT devices.
 
@@ -76,7 +76,7 @@ The mitigations map to those threats: segmentation limits lateral movement, sepa
 
 ## What I learned from this project
 
-- Security measures should be implemented with mitigation of a specific threat in mind — stacking controls without clear reasoning creates maintenance burden without proportional benefit.
+- Security measures should be implemented with mitigation of a specific threat in mind — stacking controls for the sake of it creates maintenance burden without real benefit.
 - Measured performance data can overturn a reasonable-looking design. The router-level VPN decision was only correct in theory.
 - Segmentation design is constrained by network hardware (in this case, an existing unmanaged switch shared by multiple rooms), not just logical preference.
 - How to layer controls so no single failure leads to a full compromise (defense in depth). For example, encrypted VPNs and DNS filtering reduce exposure to malicious traffic, while port isolation and network segmentation limit lateral movement. Even if one control fails, the others should still contain the impact.
