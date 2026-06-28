@@ -23,6 +23,11 @@ Incident reports and security assessments completed as part of the Google Cybers
 | [SYN Flood DoS Attack Analysis](syn-flood-dos-attack-google-mar26.md) | Identified a single-source SYN flood from connection timeout logs, explained the TCP three-way handshake exploit | March 2026 |
 
 
+## Scripting & Automation
+
+| Document | Description | Date |
+| --- | --- | --- |
+| [Python List Management Automation Script](python-script-example-jun26.md) | Created a Python script to automate the removal of users with revoked access from an access list | June 2026 |
 ---
 
 ## Skills Demonstrated Across Coursework
