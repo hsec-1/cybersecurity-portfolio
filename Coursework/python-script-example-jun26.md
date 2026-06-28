@@ -49,5 +49,9 @@ Removes any items that match the remove list
 Turns the updated list back into writable string
 Overwrites the old list with the new list in the text file
 
+---
+
 ## Skills Demonstrated
 ```Python```, ```Automation```, ```Access Control Management```
+
+[← Back to Coursework](README.md) | [← Back to Portfolio](../README.md)
