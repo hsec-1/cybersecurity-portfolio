@@ -39,8 +39,7 @@ with open(import_allow, "w") as allow:
 ```
 
 ## Summary
-The script above automates the removal of IP addresses from the 'remove list'. This is an effective way to reduce the chances of human error
-while removing the need for an analyst to spend time on a repetitive and time consuming task. 
+The script above automates the removal of IP addresses included on the 'remove list' from the 'allow list'. This is an effective way to reduce human error and remove a repetitive, time consuming task from an analysts workload. 
 
 The script performs the following tasks:
 Imports the allow list file
