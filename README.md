@@ -93,6 +93,9 @@ Full index in [Coursework/README.md](Coursework/README.md).
 | [Data Leak — Sales Folder Exposure](Coursework/data-leak-sales-folder-google-apr26.md) | Analysed accidental external sharing of internal documents, identified structural data separation issue missed by the course exemplar | April 2026 |
 | [SYN Flood DoS Attack Analysis](Coursework/syn-flood-dos-attack-google-mar26.md) | Identified single-source SYN flood from connection timeout logs, explained the TCP three-way handshake exploit | March 2026 |
 | [HTTP & Brute Force Attack Incident](Coursework/http-brute-force-incident-google-mar26.md) | Investigated brute-forced admin account that resulted in malicious JavaScript injection and a malware redirect chain | March 2026 |
+| [Python List Management Automation Script](Coursework/python-script-example-jun26.md) | Created a Python script to automate the removal of users with revoked access from an access list | June 2026 |
+
+---
 
 </details>
 
