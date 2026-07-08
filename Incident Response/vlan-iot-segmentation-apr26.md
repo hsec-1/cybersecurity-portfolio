@@ -48,7 +48,7 @@ Designed and implemented IoT network segmentation using a router with guest netw
 
 **Approach:**
 
-* Created a dedicated IoT network profile in Guest Network Pro with a separate subnet
+* Created a dedicated IoT network profile in router with a separate subnet
 * Enabled DHCP server on the VLAN with a restricted client limit
 * Assigned the Android TV streaming device's physical LAN port to an isolated VLAN via LAN → VLAN port configuration (Access mode)
 * Connected remaining IoT devices to the IoT WiFi SSID
