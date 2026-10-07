@@ -6,6 +6,13 @@ For a description of how AI tools were used in producing this portfolio, see [ME
 
 ---
 
+## Certifications
+
+- **CompTIA Security+ (SY0-701)**, September 2026 · [Verify](https://www.credly.com/badges/4d10ae10-0af5-4fc9-a8c5-9f4156344f09/public_url)
+- **Google Cybersecurity Professional Certificate**, June 2026 · [Verify](https://www.credly.com/badges/c25bf954-c66d-4886-adb0-73ba73ff7f12/public_url)
+
+---
+
 ## Featured Work
 
 Highlights from real-world investigations, applied research, and coursework.
